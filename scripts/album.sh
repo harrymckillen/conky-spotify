@@ -1,9 +1,9 @@
 #!/bin/bash
  
 album=`dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:'org.mpris.MediaPlayer2.Player' string:'Metadata'|egrep -A 1 "album"|egrep -v "album"|cut -b 44-|cut -d '"' -f 1|egrep -v ^$`
-if [ ${#album} -ge 40 ] 
+if [ ${#album} -ge 35 ] 
 then
-	echo ${album:0:35}"..."
+	echo ${album:0:30}"..."
 else
 	echo $album
 fi

@@ -1,17 +1,22 @@
 # Conky-Spotify
 
-Conky-Spotify show current Spotify track in Conky (title, artist, album, cover...)
+_Forked from Madh93_
 
-![Alt text](http://oi57.tinypic.com/2w3ylhv.jpg "Sample of conky-spotify")
+Conky-Spotify shows the current Spotify track in Conky (title, artist, album, cover...)
 
-## Install
+
+## Installation
 
 To install Conky-Spotify:
 
-    wget -O conky-spotify https://codeload.github.com/Madh93/conky-spotify/zip/master
-    unzip conky-spotify
-    mv conky-spotify-master ~/.conky/conky-spotify
+1. Clone or Dowload repo from GitHub
+2. Move `conky-spotify` folder to your preferred location, e.g. `~/.conky/`
+3. Reference it in your startup script;
+	e.g `conky -d -b -c ~/.conky/conkyrc_spotify 2> /dev/null & exit`
 
-## Conky-Small Setup
 
-![Alt text](https://i.imgur.com/wsiD4X6.png "Sample of conky-spotify-small")
+## Theme
+
+Current flavour is Orange which is easily changeable via the configuration.
+
+![Sample of conkyrc_spotify](example.png "Sample of conkyrc_spotify")
